@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>תיק עבודות וכרטיס ביקור מקצועי</title>
+    <!-- Google Fonts: Heebo & Rubik for Hebrew, Outfit for English headings -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800&family=Outfit:wght@300;400;600;700&family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+    <!-- Background grid & glow effects -->
+    <div class="blob-glow blob-1"></div>
+    <div class="blob-glow blob-2"></div>
+    <div class="grid-overlay"></div>
+
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <span class="logo-dot"></span>
+                <span class="logo-text">סופי / Sophy</span>
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link active">אודות</a></li>
+                    <li><a href="#cv" class="nav-link">קורות חיים</a></li>
+                    <li><a href="#projects" class="nav-link">פרויקטים</a></li>
+                    <li><a href="#resources" class="nav-link">כלי למידה</a></li>
+                    <li><a href="#contact" class="nav-link nav-btn">צור קשר</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <!-- Theme Toggle Button -->
+                <button id="themeToggle" class="theme-toggle" aria-label="שינוי ערכת נושא">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-toggle" id="mobileToggle" aria-label="פתח תפריט">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-badge">זמינה לפרויקטים והזדמנויות חדשות</span>
+                    <h1 class="hero-title">
+                        יוצרת חוויות דיגיטליות <br>
+                        <span class="gradient-text">מדויקות ומרשימות</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        אני מפתחת ומעצבת אתרים המשלבת בין קוד נקי, פונקציונליות מתקדמת וחווית משתמש (UX) מלוטשת. ברוכים הבאים למרחב הדיגיטלי שלי.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">לצפייה בעבודות שלי</a>
+                        <a href="#cv" class="btn btn-secondary">לצפייה בקורות החיים</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="profile-card-glow">
+                        <div class="profile-card">
+                            <div class="profile-header">
+                                <div class="profile-avatar">
+                                    <i class="fa-solid fa-user-astronaut"></i>
+                                </div>
+                                <div class="profile-info">
+                                    <h3>סופי</h3>
+                                    <p>מפתחת אתרים ויוצרת תוכן</p>
+                                </div>
+                            </div>
+                            <div class="profile-body">
+                                <div class="profile-stat">
+                                    <span class="stat-label">מיקום:</span>
+                                    <span class="stat-value">ישראל</span>
+                                </div>
+                                <div class="profile-stat">
+                                    <span class="stat-label">תחום:</span>
+                                    <span class="stat-value">Frontend & Design</span>
+                                </div>
+                                <div class="profile-skills-mini">
+                                    <span class="skill-tag-mini">HTML5</span>
+                                    <span class="skill-tag-mini">CSS3</span>
+                                    <span class="skill-tag-mini">JavaScript</span>
+                                    <span class="skill-tag-mini">UI/UX</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About & Stats Section -->
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">קצת עלי</span>
+                    <h2 class="section-title">מי אני ומה אני עושה</h2>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h3>תשוקה לקוד, עיצוב ולמידה מתמדת</h3>
+                        <p>
+                            אני מאמינה שהאינטרנט צריך להיות מקום יפהפה, נגיש ומהיר. כיוצרת ומפתחת, אני מתמקדת בבניית אתרים מודרניים העומדים בסטנדרטים הטכנולוגיים הגבוהים ביותר, תוך שימת דגש על עיצוב נקי וטיפוגרפיה מעולה.
+                        </p>
+                        <p>
+                            בנוסף לפיתוח, אני חובבת גדולה של למידה עצמית ומשתפת כלים ומקורות מידע שיכולים לעזור למפתחים ומעצבים אחרים בתחילת דרכם או לאורך הקריירה.
+                        </p>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <span class="stat-number">10+</span>
+                                <span class="stat-name">פרויקטים מושלמים</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">99%</span>
+                                <span class="stat-name">שביעות רצון</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">3+</span>
+                                <span class="stat-name">שנות ניסיון</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-skills">
+                        <h3>הכישורים שלי</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">פיתוח פרונטאנד (HTML, CSS, JS)</span>
+                                    <span class="skill-percent">95%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar" style="width: 95%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">עיצוב ממשק וחווית משתמש (UI/UX)</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">פיתוח רספונסיבי למובייל</span>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">React / כלי פיתוח מודרניים</span>
+                                    <span class="skill-percent">75%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CV / Resume Section -->
+        <section id="cv" class="cv-section section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">המסלול המקצועי שלי</span>
+                    <h2 class="section-title">קורות חיים</h2>
+                </div>
+
+                <div class="cv-tabs">
+                    <button class="cv-tab-btn active" data-tab="experience">
+                        <i class="fa-solid fa-briefcase"></i> ניסיון תעסוקתי
+                    </button>
+                    <button class="cv-tab-btn" data-tab="education">
+                        <i class="fa-solid fa-graduation-cap"></i> השכלה והכשרות
+                    </button>
+                </div>
+
+                <div class="cv-tab-content active" id="experience">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2024 - היום</div>
+                            <div class="timeline-content">
+                                <h3>מפתחת פרונטאנד עצמאית / פרילאנס</h3>
+                                <h4>עבור מגוון לקוחות וחברות סטארט-אפ</h4>
+                                <p>פיתוח ותכנון אתרי תדמית, דפי נחיתה אינטראקטיביים ואפליקציות ווב בטכנולוגיות HTML5, CSS3, JavaScript, ו-React. עבודה צמודה עם מעצבי מוצר והטמעת רספונסיביות מלאה.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2022 - 2024</div>
+                            <div class="timeline-content">
+                                <h3>מפתחת אתרים ומעצבת גראפית</h3>
+                                <h4>סטודיו לעיצוב דיגיטלי "פיקסלס"</h4>
+                                <p>עיצוב ממשקים (Figma) ותרגומם לקוד HTML/CSS איכותי. שיפור ביצועי אתרים קיימים, התאמה לנגישות והטמעת מערכות ניהול תוכן.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2021 - 2022</div>
+                            <div class="timeline-content">
+                                <h3>יוצרת תוכן ומנהלת רשתות חברתיות</h3>
+                                <h4>מיזם טכנולוגי חינוכי "דקאוד"</h4>
+                                <p>ניהול נוכחות דיגיטלית, כתיבת תכנים והסברים טכנולוגיים פשוטים לקהל רחב, יצירת מדריכים ללימוד תכנות.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cv-tab-content" id="education">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2021 - 2022</div>
+                            <div class="timeline-content">
+                                <h3>קורס מפתחי Full Stack Web Development</h3>
+                                <h4>מכללה טכנולוגית מובילה</h4>
+                                <p>הכשרה מקיפה של כ-600 שעות לימוד מעשיות הכוללת HTML5, CSS3, JavaScript (ES6+), React, Node.js, ובסיסי נתונים SQL/NoSQL.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2018 - 2021</div>
+                            <div class="timeline-content">
+                                <h3>תואר ראשון במערכות מידע ניהוליות</h3>
+                                <h4>האוניברסיטה הפתוחה</h4>
+                                <p>לימודים אקדמיים הכוללים מבוא למדעי המחשב, בסיסי נתונים, אפיון מערכות מידע וניהול פרויקטים טכנולוגיים.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">הסמכות נוספות</div>
+                            <div class="timeline-content">
+                                <h3>קורסי התמחות עצמאיים</h3>
+                                <h4>פלטפורמות Udemy, Frontend Masters, Interaction Design Foundation</h4>
+                                <p>הסמכות בעיצוב ממשק משתמש (UI/UX Design), אנימציות CSS מתקדמות, ופיתוח נגיש (Web Accessibility).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">עבודות נבחרות</span>
+                    <h2 class="section-title">פרויקטים שיצרתי</h2>
+                </div>
+
+                <!-- Filters -->
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">הכל</button>
+                    <button class="filter-btn" data-filter="web">פיתוח אתרים</button>
+                    <button class="filter-btn" data-filter="design">עיצוב ממשק</button>
+                    <button class="filter-btn" data-filter="tools">אפליקציות וכלים</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card" data-category="web">
+                        <div class="project-img-wrapper">
+                            <div class="project-img-placeholder font-gradient">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="#" class="project-link" aria-label="צפייה בפרויקט חי"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a href="#" class="project-link" aria-label="קוד מקור ב-GitHub"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <span class="project-category">פיתוח אתרים</span>
+                            <h3>אתר מסחר אלקטרוני מודרני</h3>
+                            <p>חנות וירטואלית מעוצבת ורספונסיבית המבוססת על React ו-CSS מותאם אישית, כולל ניהול עגלת קניות ומערכת סינון מוצרים מתקדמת.</p>
+                            <div class="project-tags">
+                                <span>React</span>
+                                <span>CSS Modules</span>
+                                <span>Context API</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card" data-category="design">
+                        <div class="project-img-wrapper">
+                            <div class="project-img-placeholder font-gradient-2">
+                                <i class="fa-solid fa-compass-drafting"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="#" class="project-link" aria-label="צפייה בתיק עיצוב"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <span class="project-category">עיצוב ממשק</span>
+                            <h3>אפליקציית פינטק - קונספט פיננסי</h3>
+                            <p>אפיון ועיצוב ממשק משתמש שלם לאפליקציית ניהול תקציב אישי ב-Figma. דגש על פשטות תפעולית, נגישות צבעים ועיצוב נקי במיוחד.</p>
+                            <div class="project-tags">
+                                <span>Figma</span>
+                                <span>UI/UX</span>
+                                <span>Mobile App</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card" data-category="tools">
+                        <div class="project-img-wrapper">
+                            <div class="project-img-placeholder font-gradient-3">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="#" class="project-link" aria-label="צפייה בכלי חי"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a href="#" class="project-link" aria-label="קוד מקור ב-GitHub"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <span class="project-category">אפליקציות וכלים</span>
+                            <h3>מחולל פלטת צבעים נגישה</h3>
+                            <p>כלי קל ונוח המאפשר למעצבים ומפתחים ליצור שילובים של צבעים הבודקים אוטומטית עמידה בתקן הנגישות WCAG.</p>
+                            <div class="project-tags">
+                                <span>JavaScript</span>
+                                <span>A11y API</span>
+                                <span>Vanilla CSS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card" data-category="web">
+                        <div class="project-img-wrapper">
+                            <div class="project-img-placeholder font-gradient-4">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="#" class="project-link" aria-label="צפייה באתר חי"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a href="#" class="project-link" aria-label="קוד מקור ב-GitHub"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <span class="project-category">פיתוח אתרים</span>
+                            <h3>אתר תדמית לחברת ארכיטקטורה</h3>
+                            <p>אתר בעל עיצוב מינימליסטי המציג פרויקטי בנייה, כולל מעברים חלקים (Page Transitions) ואנימציות עדינות מבוססות גלילה.</p>
+                            <div class="project-tags">
+                                <span>HTML5</span>
+                                <span>CSS Grid</span>
+                                <span>GSAP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learning Tools & Resources Section -->
+        <section id="resources" class="resources-section section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">שיתוף ידע</span>
+                    <h2 class="section-title">כלי למידה ומקורות מומלצים</h2>
+                    <p class="section-description">אוסף כלים מומלצים ללימוד פיתוח, עיצוב והתפתחות מקצועית שצברתי לאורך הדרך.</p>
+                </div>
+
+                <div class="resources-grid">
+                    <!-- Resource Category 1 -->
+                    <div class="resource-col">
+                        <div class="resource-header-card font-gradient">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <h3>פלטפורמות לימוד</h3>
+                        </div>
+                        <div class="resource-links-list">
+                            <a href="https://developer.mozilla.org" target="_blank" rel="noopener" class="resource-item-link">
+                                <div class="resource-item-icon"><i class="fa-brands fa-chrome"></i></div>
+                                <div class="resource-item-info">
+                                    <h4>MDN Web Docs</h4>
+                                    <p>התנ"ך של מפתחי הפרונטאנד. תיעוד רשמי ומקיף לכל מה שקשור ב-HTML, CSS ו-JavaScript.</p>
+                                </div>
+                            </a>
+                            <a href="https://css-tricks.com" target="_blank" rel="noopener" class="resource-item-link">
+                                <div class="resource-item-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                                <div class="resource-item-info">
+                                    <h4>CSS-Tricks</h4>
+                                    <p>מאמרים, טיפים ומדריכים מעמיקים בנושאי עיצוב פריסה ב-CSS, Flexbox, Grid ועוד.</p>
+                                </div>
+                            </a>
+                            <a href="https://javascript.info" target="_blank" rel="noopener" class="resource-item-link">
+                                <div class="resource-item-icon"><i class="fa-brands fa-js"></i></div>
+                                <div class="resource-item-info">
+                                    <h4>JavaScript.info</h4>
+                                    <p>מדריך מעמיק וברור של שפת ה-JavaScript, מהיסודות ועד לנושאים מתקדמים ביותר.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Resource Category 2 -->
+                    <div class="resource-col">
+                        <div class="resource-header-card font-gradient-2">
+                            <i class="fa-solid fa-cubes"></i>
+                            <h3>כלי פיתוח ועזר</h3>
+                        </div>
+                        <div class="resource-links-list">
+                            <a href="https://caniuse.com" target="_blank" rel="noopener" class="resource-item-link">
+                                <div class="resource-item-icon"><i class="fa-solid fa-circle-check"></i></div>
+                                <div class="resource-item-info">
+                                    <h4>Can I Use</h4>
+                                    <p>בדיקת תאימות של פיצ'רים ב-CSS ו-JS מול דפדפנים שונים בזמן אמת.</p>
+                                </div>
+                            </a>
+                            <a href="https://uiverse.io" target="_blank" rel="noopener" class="resource-item-link">
+                                <div class="resource-item-icon"><i class="fa-solid fa-shapes"></i></div>
+                                <div class="resource-item-info">
+                                    <h4>Uiverse.io</h4>
+                                    <p>ספרייה עצומה של אלמנטים עיצוביים בקוד פתוח (כפתורים, כרטיסים, טפסים) ב-CSS טהור.</p>
+                                </div>
+                            </a>
+                            <a href="https://tinypng.com" target="_blank" rel="noopener" class="resource-item-link">
+                                <div class="resource-item-icon"><i class="fa-solid fa-file-image"></i></div>
+                                <div class="resource-item-info">
+                                    <h4>TinyPNG</h4>
+                                    <p>כיווץ אופטימלי של תמונות לטעינה מהירה במיוחד של האתר ללא פגיעה משמעותית באיכות.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Resource Category 3 -->
+                    <div class="resource-col">
+                        <div class="resource-header-card font-gradient-3">
+                            <i class="fa-solid fa-palette"></i>
+                            <h3>השראה ועיצוב</h3>
+                        </div>
+                        <div class="resource-links-list">
+                            <a href="https://dribbble.com" target="_blank" rel="noopener" class="resource-item-link">
+                                <div class="resource-item-icon"><i class="fa-brands fa-dribbble"></i></div>
+                                <div class="resource-item-info">
+                                    <h4>Dribbble</h4>
+                                    <p>רשת השראה לעיצובים דיגיטליים, עיצוב ממשקים, לוגואים ואיורים ממעצבים בכל העולם.</p>
+                                </div>
+                            </a>
+                            <a href="https://coolors.co" target="_blank" rel="noopener" class="resource-item-link">
+                                <div class="resource-item-icon"><i class="fa-solid fa-palette"></i></div>
+                                <div class="resource-item-info">
+                                    <h4>Coolors</h4>
+                                    <p>מחולל פלטות צבעים סופר מהיר ונוח שמסייע ליצור התאמות הרמוניות לפרויקטים.</p>
+                                </div>
+                            </a>
+                            <a href="https://fonts.google.com" target="_blank" rel="noopener" class="resource-item-link">
+                                <div class="resource-item-icon"><i class="fa-solid fa-font"></i></div>
+                                <div class="resource-item-info">
+                                    <h4>Google Fonts</h4>
+                                    <p>קטלוג ענק של פונטים חינמיים לשימוש מסחרי ואישי, כולל מגוון פונטים מרהיבים בעברית.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">נשמור על קשר?</span>
+                    <h2 class="section-title">יצירת קשר</h2>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info-card">
+                        <h3>בואו נדבר!</h3>
+                        <p>אם יש לכם פרויקט מעניין בראש, הזדמנות לשיתוף פעולה, או שאתם סתם רוצים להגיד שלום - מוזמנים ליצור קשר דרך הטופס או בערוצים הישירים.</p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method-item">
+                                <div class="method-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="method-details">
+                                    <span>מייל ישיר</span>
+                                    <a href="mailto:your.email@example.com">your.email@example.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-method-item">
+                                <div class="method-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                                <div class="method-details">
+                                    <span>LinkedIn</span>
+                                    <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">linkedin.com/in/yourprofile</a>
+                                </div>
+                            </div>
+                            <div class="contact-method-item">
+                                <div class="method-icon"><i class="fa-brands fa-github"></i></div>
+                                <div class="method-details">
+                                    <span>GitHub</span>
+                                    <a href="https://github.com/yourusername" target="_blank" rel="noopener">github.com/yourusername</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper">
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">שם מלא</label>
+                                <input type="text" id="name" name="name" required placeholder="השם שלך כאן">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">כתובת אימייל</label>
+                                <input type="email" id="email" name="email" required placeholder="email@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">הודעה</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="איך אוכל לעזור לך?"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">שליחת הודעה <i class="fa-solid fa-paper-plane" style="margin-right: 8px;"></i></button>
+                            <div id="formFeedback" class="form-feedback"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 סופי. כל הזכויות שמורות.</p>
+            <div class="footer-socials">
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
