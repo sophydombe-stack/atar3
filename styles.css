@@ -571,6 +571,12 @@ button {
     align-items: start;
 }
 
+.about-section .about-grid {
+    grid-template-columns: 1fr;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 .about-text h3, 
 .about-skills h3 {
     font-size: 1.5rem;
