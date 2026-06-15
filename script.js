@@ -166,6 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ...document.querySelectorAll('.section-header'),
         ...document.querySelectorAll('.about-grid > div'),
         ...document.querySelectorAll('.cv-download-card'),
+        ...document.querySelectorAll('.ai-placeholder-card'),
         ...document.querySelectorAll('.project-card'),
         ...document.querySelectorAll('.resource-col'),
         ...document.querySelectorAll('.contact-info-card'),
