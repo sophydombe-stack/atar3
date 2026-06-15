@@ -75,25 +75,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // ==========================================================================
-    // CV Tab Switcher (Experience vs Education)
-    // ==========================================================================
-    const tabButtons = document.querySelectorAll('.cv-tab-btn');
-    const tabContents = document.querySelectorAll('.cv-tab-content');
-
-    tabButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const targetTab = button.getAttribute('data-tab');
-
-            // Remove active class from buttons and contents
-            tabButtons.forEach(btn => btn.classList.remove('active'));
-            tabContents.forEach(content => content.classList.remove('active'));
-
-            // Add active class to selected button and content
-            button.classList.add('active');
-            document.getElementById(targetTab).classList.add('active');
-        });
-    });
 
     // ==========================================================================
     // Portfolio Filter Logic
@@ -184,7 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const revealElements = [
         ...document.querySelectorAll('.section-header'),
         ...document.querySelectorAll('.about-grid > div'),
-        ...document.querySelectorAll('.timeline-item'),
+        ...document.querySelectorAll('.cv-download-card'),
         ...document.querySelectorAll('.project-card'),
         ...document.querySelectorAll('.resource-col'),
         ...document.querySelectorAll('.contact-info-card'),
