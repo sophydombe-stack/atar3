@@ -964,6 +964,68 @@ button {
 }
 
 /* ==========================================================================
+   AI Works Section
+   ========================================================================== */
+.ai-placeholder-card {
+    border: 2px dashed var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 60px 40px;
+    text-align: center;
+    background-color: var(--bg-secondary);
+    position: relative;
+    overflow: hidden;
+    transition: transform var(--transition-smooth), border-color var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+.ai-placeholder-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-primary);
+    box-shadow: var(--shadow-lg);
+}
+
+.ai-placeholder-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--accent-primary), var(--accent-tertiary));
+}
+
+.ai-icon-wrapper {
+    font-size: 3.5rem;
+    color: var(--accent-primary);
+    margin-bottom: 24px;
+    background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-tertiary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+    animation: scaleAI 4s ease-in-out infinite;
+}
+
+@keyframes scaleAI {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+}
+
+.ai-placeholder-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+}
+
+.ai-placeholder-text {
+    color: var(--text-secondary);
+    max-width: 540px;
+    margin: 0 auto;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+/* ==========================================================================
    Contact Section
    ========================================================================== */
 .contact-grid {
